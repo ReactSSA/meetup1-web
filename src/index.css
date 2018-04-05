@@ -99,3 +99,22 @@ body, * {
   font-size: 22px;
   color: #F33F0B;
 }
+
+.loading {
+  background: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading__logo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.loading p {
+  color: #fff;
+}
