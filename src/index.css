@@ -5,6 +5,11 @@ body, * {
   color: #47525E;
 }
 
+.App {
+  width: 900px;
+  margin: 0 auto;
+}
+
 .header {
   min-height: 65px;
   background: #fff;
@@ -35,6 +40,7 @@ body, * {
   background: transparent;
   border: 1px solid #47525E;
   border-radius: 5px;
+  margin: 10px 0;
 }
 
 .filters__order {
