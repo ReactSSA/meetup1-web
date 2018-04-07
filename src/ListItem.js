@@ -1,7 +1,5 @@
 import React from 'react';
 
-const formatPrice = price => `${price.toFixed(2)}`.replace('.', ',');
-
 const ListItem = props => (
     <li className="item">
         <div className="item__image">
@@ -11,7 +9,7 @@ const ListItem = props => (
         {props.autores.map((autor, key) => 
             <p key={key} className="item__autor">{autor}</p>
         )}
-        <p className="item__preco">Por R${formatPrice(props.preco)}</p>
+        <p className="item__preco">Por R${props.preco.toFixed(2).replace('.', ',')}</p>
     </li>
 );
 
