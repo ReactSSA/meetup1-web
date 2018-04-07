@@ -29,7 +29,7 @@ export default class App extends React.Component {
 
         return (
             <div className="App">
-                <select className="filters__categories" onChange={this.filtrarPorCategoria}>
+                <select className="categories" onChange={this.filtrarPorCategoria}>
                     <option value="">Todas</option>
                     <option value="enfermagem">Enfermagem</option>
                     <option value="odontologia">Odontologia</option>
