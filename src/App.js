@@ -2,12 +2,10 @@ import React from 'react';
 import ListItem from './ListItem';
 
 export default class App extends React.Component {
-
     constructor(props) {
         super(props);
 
         this.books = [];
-        this.categorias = ['Medicina', 'Odontologia', 'Enfermagem'];
         this.state = {
             books: []
         };
@@ -33,9 +31,9 @@ export default class App extends React.Component {
             <div className="App">
                 <select className="filters__categories" onChange={this.filtrarPorCategoria}>
                     <option value="">Todas</option>
-                    {this.categorias.map((categoria, index) => (
-                        <option key={index} value={categoria.toLowerCase()}>{categoria}</option>
-                    ))}
+                    <option value="enfermagem">Enfermagem</option>
+                    <option value="odontologia">Odontologia</option>
+                    <option value="medicina">Medicina</option>
                 </select>
                 <ul className="list">
                     { books.map((item, index) => <ListItem key={index} {...item} />) }
